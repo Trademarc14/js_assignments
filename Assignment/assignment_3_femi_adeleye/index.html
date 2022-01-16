@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device=width, initial=scale=1.0">
+	<title>Page Stucture Example</title>
+</head>
+
+<body>
+	<form method="POST" action="https://us-central1-fir-ac2be.cloudfunctions.net/formReader">
+		<!-- title input-->
+		<label for="title">Title:</label>
+		<select id="title">
+			<option>Mr.</option>
+			<option>Mrs.</option>
+			<option>Ms.</option>
+		</select>
+
+		<!-- Name input-->
+		<label>
+			Name
+			<input id="name" type="text" placeholder="Type Full Name here" />
+		</label>
+		<!-- email input -->
+		<label>
+			Email
+			<input id="email" type="text" placeholder="Type your email" />
+		</label>
+		<!-- Address input -->
+		<label>
+			Address
+			<textarea id="address" placeholder="Type your address"></textarea>
+		</label>
+
+		<fieldset>
+			<legend>Sizes</legend>
+			<label>
+				xs
+				<input type="radio" name="sizes" value="xs" checked />
+			</label>
+			<label>
+				s
+				<input type="radio" name="sizes" value="s" />
+			</label>
+			<label>
+				m
+				<input type="radio" name="sizes" value="m" />
+			</label>
+			<label>
+				L
+				<input type="radio" name="sizes" value="L" />
+			</label>
+			<label>
+				XL
+				<input type="radio" name="sizes" value="XL" />
+			</label>
+		</fieldset>
+
+
+		<!-- Gender input -->
+		<fieldset>
+			<legend>Gender</legend>
+			<label>
+				male
+				<input type="radio" name="gender" value="male" checked />
+			</label>
+			<label>
+				female
+				<input type="radio" name="gender" value="female" />
+			</label>
+		</fieldset>
+
+		<!-- Partern input -->
+		<fieldset>
+			<legend>Partern</legend>
+			<label>
+				Back print
+				<input type="radio" name="partern" value="back print" checked />
+			</label>
+			<label>
+				Front print
+				<input type="radio" name="partern" value="front print" />
+			</label>
+			<label>
+				Details
+				<input type="radio" name="partern" value="details" />
+			</label>
+		</fieldset>
+
+		<br>
+
+		<button type="submit">Submit</button>
+
+	</form>
+
+</body>
+
+</html>

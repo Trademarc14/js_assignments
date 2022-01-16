@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device=width, initial=scale=1.0">
+	<title>Page Stucture Example</title>
+	<style>
+		img {
+			max-width: 100%;
+		}
+	</style>
+</head>
+
+
+<body>
+	<picture>
+		<source type="image/avif" srcset="assets/donut-2.6-360px.avif 360w, assets/donut-2-6-480px 480w"
+			sizes="(max-width: 480px) 360px, 480px" />
+		<source type="image/webp" srcset="assets/donut-2-6.webp" />
+		<img type="image/jpeg" src="assets/donut-2-6.jpeg" alt="Picture of a doughnut" />
+	</picture>
+
+	<audio controls autoplay loop>
+		<source>
+	</audio>
+
+	<!-- OR -->
+
+	<audio src="" controls autoplay loop></audio>
+
+	<video controls autoplay muted loop>
+		<source type="video/avi" src="">
+		<track src=".vtt">
+	</video>
+
+	<!-- OR -->
+
+	<video src="" controls autoplay muted loop>
+		<track src=".vtt">
+
+	</video>
+
+	<iframe width="560" height="315" src="<iframe width=" 560" height="315"
+		src="https://www.youtube.com/embed/wtorYQ1F9QI" title="YouTube video player" frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen></iframe>"
+
+
+</body>
+
+</html>

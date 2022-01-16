@@ -1,0 +1,133 @@
+@font-face {
+	font-family: Roboto;
+	src: url(./fonts/Roboto-Thin.ttf);
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("./fonts/Roboto-ThinItalic.ttf");
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+body {
+	font-family: "Roboto";
+	font-weight: 100;
+	font-style: italic;
+}
+
+p.intro {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+	 'Lucida Sans', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 24pt;
+	line-height: 1.5em;
+	font-style: italic;
+}
+
+
+span {
+	background-color: pink;
+	padding: 10px;
+	margin: 10px;
+}
+
+.inline {
+	display: inline;
+	visibility: hidden;
+}
+
+.block {
+	display: block;
+	width: 300px;
+	margin: 30px auto;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+p {
+margin: 50px 0;
+}
+
+.right-align {
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li {
+	display: inline-block;
+	background-color: aquamarine;
+	padding: 5px 7px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.intro {
+	text-indent: 20px;
+	text-transform: capitalize;
+}
+
+.intro::first-letter {
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+.intro::first-line {
+	letter-spacing: -1px;
+}
+
+img {
+	width: 200px;
+}
+
+.parent {
+	position: relative;
+	padding: 20px;
+	background-color: red;
+	width: 600px;
+	height: 150px;
+	overflow: auto;
+}
+
+.parent .child {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	background-color: aqua;
+	width: 200px;
+	height: 200px;
+	z-index: 10;
+}
+
+.parent .child:nth-child(2) {
+	top: 30px;
+	left: 40px;
+	background-color: blueviolet;
+	z-index: 1;
+}
+
+p {
+	position: relative;
+}
+
+p span.box {
+	display: block;
+	background-color: coral;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

@@ -1,0 +1,89 @@
+/* Base/Mobile Styles */
+body {
+	margin: 0;
+	padding: 0;
+  }
+  
+  header {
+	background: firebrick;
+	padding: 30px;
+  }
+  
+  header h1 {
+	margin-right: 50px;
+  }
+  
+  header label {
+	width: 42px;
+	height: 42px;
+	overflow: hidden;
+	cursor: pointer;
+  }
+
+  header label i line {
+	  stroke: black;
+  }
+  
+  header label:hover {
+	filter: invert(1);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	margin-top: 0;
+  }
+  
+  nav {
+	display: block;
+	height: 0;
+	overflow: hidden;
+	transition: height 500ms ease 0s;
+  }
+  
+  nav ul {
+	display: block;
+  }
+  
+  .header {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  header input[type="checkbox"]:checked + nav {
+	height: auto;
+  }
+
+  header {
+	display: flex;
+  }
+  
+  nav {
+	height: auto;
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+  }
+  
+  nav ul {
+	display: grid;
+	gap: 20px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+  }
+  
+  nav ul.main-nav {
+	grid-template-columns: repeat(4, 1fr);
+  }
+  
+  nav ul.secondary-nav {
+	grid-template-columns: 1fr 1fr;
+  }
+  
+  header label {
+	display: none;
+  }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device=width, initial=scale=1.0">
+	<title>Page Stucture Example</title>
+</head>
+
+<body>
+	<form>
+		<!-- standard text box -->
+		<label>
+			Marital status
+			<input id="marital_status" type="text" placeholder="Type a some text here" />
+		</label>
+		<!-- password input -->
+		<input type="password" />
+
+		<!-- number input -->
+		<input type="number" placeholder="Type a number" min="0" max="24" />
+
+		<!-- email input -->
+		<input type="email" placeholder="Type your email" />
+
+		<!-- tel input -->
+		<input type="tel" placeholder="Type a tel" />
+
+		<textarea name="textarea" rows="10" cols="10"></textarea>
+
+		<fieldset>
+			<legend>Course Level</legend>
+			<label>
+				Adult
+				<input type="radio" name="status" value="adult" checked />
+			</label>
+			<label>
+				Child
+				<input type="radio" name="status" value="child" />
+			</label>
+		</fieldset>
+
+		<select name="options">
+			<options value="1">Option 1</options>
+			<options value="2">Option 2</options>
+			<options value="3">Option 3</options>
+			<options value="4">Option 4</options>
+		</select>
+
+		<br>
+
+		<input list="countries" name="countries" />
+		<datalist id="countries">
+			<options value="Canada"></options>
+			<options value="United Kingdom"></options>
+			<options value="New Zealand"></options>
+			<options value="China"></options>
+			<options value="Japan"></options>
+		</datalist>
+
+		<button type="reset">RESETFORM</button>
+	</form>
+
+</body>
+
+</html>
